@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="20" passed="20">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="44524" started-at="2019-05-11T07:41:48Z" finished-at="2019-05-11T07:42:32Z">
+    <groups>
+      <group name="Resgression">
+        <method signature="Login_TestCase.validUsername_Password()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="validUsername_Password" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+      </group> <!-- Resgression -->
+      <group name="Regression">
+        <method signature="Login_TestCase.Check_PlaceHolder_Password()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="Check_PlaceHolder_Password" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.Check_PlaceHolder_Username()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="Check_PlaceHolder_Username" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.Verify_Url()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="Verify_Url" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.blank_username_password()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="blank_username_password" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.check_Button_color()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="check_Button_color" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.check_Links()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="check_Links" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.invalidusername_password()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="invalidusername_password" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.loginsesion()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="loginsesion" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.verifyApplicationTitle()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="verifyApplicationTitle" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.verify_Title()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="verify_Title" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="Login_TestCase.Verify_Url_DashBoard()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="Verify_Url_DashBoard" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.heading_Dashboard()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="heading_Dashboard" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.verifyApplicationTitle_DashBoard()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="verifyApplicationTitle_DashBoard" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+      </group> <!-- Smoke -->
+      <group name="Unit">
+        <method signature="Login_TestCase.Click_On_AddUser_Btn()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="Click_On_AddUser_Btn" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.Fill_Form()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="Fill_Form" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.clickOn_OperatorBtn()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="clickOn_OperatorBtn" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.click_OnUser()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="click_OnUser" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.getTableData()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="getTableData" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+        <method signature="Login_TestCase.logOutBtn()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="logOutBtn" class="TestNgDemo.TestNgMaven.Login_TestCase"/>
+      </group> <!-- Unit -->
+    </groups>
+    <test name="Default test" duration-ms="44524" started-at="2019-05-11T07:41:48Z" finished-at="2019-05-11T07:42:32Z">
+      <class name="TestNgDemo.TestNgMaven.Login_TestCase">
+        <test-method status="PASS" signature="setup_Browser()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="setup_Browser" is-config="true" duration-ms="4464" started-at="2019-05-11T13:11:43Z" finished-at="2019-05-11T13:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_Browser -->
+        <test-method status="PASS" signature="Verify_Url()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="Verify_Url" duration-ms="26" started-at="2019-05-11T13:11:48Z" finished-at="2019-05-11T13:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Url -->
+        <test-method status="PASS" signature="verifyApplicationTitle()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="verifyApplicationTitle" duration-ms="9" started-at="2019-05-11T13:11:48Z" finished-at="2019-05-11T13:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplicationTitle -->
+        <test-method status="PASS" signature="verify_Title()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="verify_Title" duration-ms="55" started-at="2019-05-11T13:11:48Z" finished-at="2019-05-11T13:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Title -->
+        <test-method status="PASS" signature="loginsesion()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="loginsesion" duration-ms="8" started-at="2019-05-11T13:11:48Z" finished-at="2019-05-11T13:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginsesion -->
+        <test-method status="PASS" signature="Check_PlaceHolder_Username()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="Check_PlaceHolder_Username" duration-ms="52" started-at="2019-05-11T13:11:48Z" finished-at="2019-05-11T13:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_PlaceHolder_Username -->
+        <test-method status="PASS" signature="Check_PlaceHolder_Password()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="Check_PlaceHolder_Password" duration-ms="18" started-at="2019-05-11T13:11:48Z" finished-at="2019-05-11T13:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_PlaceHolder_Password -->
+        <test-method status="PASS" signature="check_Button_color()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="check_Button_color" duration-ms="51" started-at="2019-05-11T13:11:48Z" finished-at="2019-05-11T13:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_Button_color -->
+        <test-method status="PASS" signature="check_Links()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="check_Links" duration-ms="31" started-at="2019-05-11T13:11:48Z" finished-at="2019-05-11T13:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_Links -->
+        <test-method status="PASS" signature="blank_username_password()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="blank_username_password" duration-ms="178" started-at="2019-05-11T13:11:48Z" finished-at="2019-05-11T13:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blank_username_password -->
+        <test-method status="PASS" signature="invalidusername_password()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="invalidusername_password" duration-ms="4247" started-at="2019-05-11T13:11:48Z" finished-at="2019-05-11T13:11:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidusername_password -->
+        <test-method status="PASS" signature="validUsername_Password()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="validUsername_Password" duration-ms="1071" started-at="2019-05-11T13:11:52Z" finished-at="2019-05-11T13:11:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUsername_Password -->
+        <test-method status="PASS" signature="Verify_Url_DashBoard()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="Verify_Url_DashBoard" duration-ms="12" started-at="2019-05-11T13:11:53Z" finished-at="2019-05-11T13:11:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Url_DashBoard -->
+        <test-method status="PASS" signature="verifyApplicationTitle_DashBoard()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="verifyApplicationTitle_DashBoard" duration-ms="8" started-at="2019-05-11T13:11:53Z" finished-at="2019-05-11T13:11:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplicationTitle_DashBoard -->
+        <test-method status="PASS" signature="heading_Dashboard()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="heading_Dashboard" duration-ms="2023" started-at="2019-05-11T13:11:53Z" finished-at="2019-05-11T13:11:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- heading_Dashboard -->
+        <test-method status="PASS" signature="click_OnUser()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="click_OnUser" duration-ms="2569" started-at="2019-05-11T13:11:55Z" finished-at="2019-05-11T13:11:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_OnUser -->
+        <test-method status="PASS" signature="getTableData()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="getTableData" duration-ms="7502" started-at="2019-05-11T13:11:58Z" finished-at="2019-05-11T13:12:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTableData -->
+        <test-method status="PASS" signature="Click_On_AddUser_Btn()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="Click_On_AddUser_Btn" duration-ms="2463" started-at="2019-05-11T13:12:05Z" finished-at="2019-05-11T13:12:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Click_On_AddUser_Btn -->
+        <test-method status="PASS" signature="Fill_Form()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="Fill_Form" duration-ms="14052" started-at="2019-05-11T13:12:08Z" finished-at="2019-05-11T13:12:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fill_Form -->
+        <test-method status="PASS" signature="clickOn_OperatorBtn()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="clickOn_OperatorBtn" duration-ms="9825" started-at="2019-05-11T13:12:22Z" finished-at="2019-05-11T13:12:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOn_OperatorBtn -->
+        <test-method status="PASS" signature="logOutBtn()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="logOutBtn" duration-ms="291" started-at="2019-05-11T13:12:32Z" finished-at="2019-05-11T13:12:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutBtn -->
+        <test-method status="PASS" signature="close_Browse()[pri:0, instance:TestNgDemo.TestNgMaven.Login_TestCase@39aeed2f]" name="close_Browse" is-config="true" duration-ms="525" started-at="2019-05-11T13:12:32Z" finished-at="2019-05-11T13:12:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_Browse -->
+      </class> <!-- TestNgDemo.TestNgMaven.Login_TestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
