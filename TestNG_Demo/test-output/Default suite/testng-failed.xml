@@ -8,6 +8,7 @@
           <include name="Verify_Url_DashBoard"/>
           <include name="logOutBtn"/>
           <include name="close_Browse"/>
+          <include name="clickOn_OperatorBtn"/>
           <include name="setup_Browser"/>
         </methods>
       </class> <!-- com.Testng_Test.Login_TestCase -->
