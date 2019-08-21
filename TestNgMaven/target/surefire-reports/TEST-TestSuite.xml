@@ -1,242 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="21" failures="3" name="TestSuite" time="46.028" errors="0" skipped="0">
+<testsuite tests="21" failures="0" name="TestSuite" time="46.637" errors="0" skipped="0">
   <properties>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="JOB_NAME" value="JBK_Maven_TestNG_GIT"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="NUMBER_OF_PROCESSORS" value="4"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="JENKINS_HOME" value="C:\Users\darsh\.jenkins"/>
-    <property name="HUDSON_SERVER_COOKIE" value="8de7a966356aadf2"/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="sun.boot.class.path" value="c:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;c:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;c:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;c:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;c:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;c:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;c:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;c:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
-    <property name="EXECUTOR_NUMBER" value="1"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="NODE_LABELS" value="master"/>
-    <property name="TEMP" value="C:\Users\darsh\AppData\Local\Temp"/>
-    <property name="java.runtime.version" value="1.8.0_144-b01"/>
-    <property name="user.name" value="darsh"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
-    <property name="ProgramFiles" value="C:\Program Files"/>
-    <property name="PROMPT" value="$P$G"/>
-    <property name="user.language" value="en"/>
-    <property name="JOB_BASE_NAME" value="JBK_Maven_TestNG_GIT"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/JBK_Maven_TestNG_GIT/6/display/redirect?page=changes"/>
-    <property name="BUILD_DISPLAY_NAME" value="#6"/>
-    <property name="OneDrive" value="C:\Users\darsh\OneDrive"/>
-    <property name="sun.boot.library.path" value="c:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
-    <property name="LOCALAPPDATA" value="C:\Users\darsh\AppData\Local"/>
-    <property name="java.version" value="1.8.0_144"/>
-    <property name="PROCESSOR_LEVEL" value="6"/>
-    <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="USERNAME" value="darsh"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="NODE_NAME" value="master"/>
-    <property name="java.endorsed.dirs" value="c:\Program Files\Java\jdk1.8.0_144\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="6"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="HOMEDRIVE" value="C:"/>
-    <property name="maven.conf" value="C:\apache-maven-3.6.0\conf"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="=::" value="::\"/>
-    <property name="SCITE_USERHOME" value="C:\Users\darsh\AppData\Local\AutoIt v3\SciTE"/>
-    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
-    <property name="user.country" value="IN"/>
-    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
-    <property name="java.home" value="c:\Program Files\Java\jdk1.8.0_144\jre"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="os.version" value="10.0"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/JBK_Maven_TestNG_GIT/6/display/redirect"/>
-    <property name="TMP" value="C:\Users\darsh\AppData\Local\Temp"/>
-    <property name="path.separator" value=";"/>
-    <property name="java.vm.version" value="25.144-b01"/>
-    <property name="user.variant" value=""/>
-    <property name="GIT_PREVIOUS_COMMIT" value="5a2f586b9adebfc9307d6637945085d63897444a"/>
-    <property name="JOB_DISPLAY_URL" value="http://localhost:8080/job/JBK_Maven_TestNG_GIT/display/redirect"/>
-    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
-    <property name="USERDOMAIN_ROAMINGPROFILE" value="DESKTOP-MDH6837"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="C_EM64T_REDIST11" value="C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\"/>
-    <property name="JAVA_HOME" value="c:\Program Files\Java\jdk1.8.0_144"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
-    <property name="ComSpec" value="C:\WINDOWS\system32\cmd.exe"/>
-    <property name="HOMEPATH" value="\Users\darsh"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="asl.log" value="Destination=file"/>
-    <property name="COMPUTERNAME" value="DESKTOP-MDH6837"/>
-    <property name="user.script" value=""/>
-    <property name="user.home" value="C:\Users\darsh"/>
-    <property name="PUBLIC" value="C:\Users\Public"/>
-    <property name="BUILD_TAG" value="jenkins-JBK_Maven_TestNG_GIT-6"/>
-    <property name="JENKINS_SERVER_COOKIE" value="8de7a966356aadf2"/>
-    <property name="HUDSON_URL" value="http://localhost:8080/"/>
-    <property name="ProgramData" value="C:\ProgramData"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="USERPROFILE" value="C:\Users\darsh"/>
-    <property name="CLASSPATH" value=""/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="java.library.path" value="c:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\apache-maven-3.6.0/bin;c:\Program Files\Java\jdk1.8.0_144/bin;c:\Program Files\Java\jdk1.8.0_144/bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Apache\maven\bin;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\darsh\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\darsh\AppData\Local\Programs\Python\Python36\;C:\Users\darsh\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Microsoft VS Code\bin;C:\Users\darsh\AppData\Roaming\npm;."/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="APPDATA" value="C:\Users\darsh\AppData\Roaming"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="maven.home" value="C:\apache-maven-3.6.0"/>
-    <property name="java.class.path" value="C:\Users\darsh\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.12.jar;C:\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;C:\apache-maven-3.6.0/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\apache-maven-3.6.0 C:\Users\darsh\.jenkins\war\WEB-INF\lib\remoting-3.29.jar C:\Users\darsh\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12.jar C:\Users\darsh\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12.jar 56719"/>
-    <property name="Path" value="c:\Program Files\Java\jdk1.8.0_144/bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Apache\maven\bin;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\darsh\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\darsh\AppData\Local\Programs\Python\Python36\;C:\Users\darsh\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Microsoft VS Code\bin;C:\Users\darsh\AppData\Roaming\npm"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
-    <property name="PATH+JDK" value="c:\Program Files\Java\jdk1.8.0_144/bin"/>
-    <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 142 Stepping 9, GenuineIntel"/>
-    <property name="SESSIONNAME" value="Console"/>
-    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\GIT_Repo\JBK_Examples\TestNgMaven"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="M2_HOME" value="C:\apache-maven-3.6.0"/>
-    <property name="=D:" value="D:\Jenkin"/>
-    <property name="java.io.tmpdir" value="C:\Users\darsh\AppData\Local\Temp\"/>
-    <property name="OS" value="Windows_NT"/>
-    <property name="HUDSON_HOME" value="C:\Users\darsh\.jenkins"/>
-    <property name="PATH+MAVEN" value="C:\apache-maven-3.6.0/bin"/>
-    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/JBK_Maven_TestNG_GIT/6/"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="SystemRoot" value="C:\WINDOWS"/>
-    <property name="java.ext.dirs" value="c:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="D:\GIT_Repo\JBK_Examples\TestNgMaven"/>
-    <property name="JOB_URL" value="http://localhost:8080/job/JBK_Maven_TestNG_GIT/"/>
-    <property name="LOGONSERVER" value="\\DESKTOP-MDH6837"/>
-    <property name="USERDOMAIN" value="DESKTOP-MDH6837"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\darsh\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
-    <property name="MAVEN_HOME" value="C:\apache-maven-3.6.0"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="6"/>
-    <property name="JENKINS_URL" value="http://localhost:8080/"/>
-    <property name="PROCESSOR_REVISION" value="8e09"/>
-    <property name="GIT_BRANCH" value="dars009/master"/>
-    <property name="ProgramW6432" value="C:\Program Files"/>
-    <property name="windir" value="C:\WINDOWS"/>
-    <property name="GIT_COMMIT" value="5a2f586b9adebfc9307d6637945085d63897444a"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="SystemDrive" value="C:"/>
-    <property name="maven3.interceptor" value="C:\Users\darsh\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12.jar"/>
-    <property name="WORKSPACE" value="C:\Users\darsh\.jenkins\workspace\JBK_Maven_TestNG_GIT"/>
-    <property name="maven3.interceptor.common" value="C:\Users\darsh\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12.jar"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\Workspace\Work\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8898261507489714619.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_211/bin/server;C:/Program Files/Java/jre1.8.0_211/bin;C:/Program Files/Java/jre1.8.0_211/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Apache\maven\bin;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\darsh\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\darsh\AppData\Local\Programs\Python\Python36\;C:\Users\darsh\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\darsh\AppData\Roaming\npm;C:\jee-photon\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\darsh"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="PSModulePath" value="C:\Program Files (x86)\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\AutoIt3\AutoItX"/>
-    <property name="DriverData" value="C:\Windows\System32\Drivers\DriverData"/>
-    <property name="GIT_URL" value="https://github.com/dars009/JBK_Examples.git/"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="darsh"/>
+    <property name="java.class.path" value="C:\Users\darsh\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.9.0.20180606-2035\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\GIT_Repo\JBK_Examples\TestNgMaven\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Verify_Url" time="0.027"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="verifyApplicationTitle" time="0.012"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="verify_Title" time="0.121"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Verify_Url" time="0.021"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="verifyApplicationTitle" time="0.005"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="verify_Title" time="0.068"/>
   <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="loginsesion" time="0.011"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Check_PlaceHolder_Username" time="0.024"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Check_PlaceHolder_Username" time="0.019"/>
   <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Check_PlaceHolder_Password" time="0.019"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="check_Button_color" time="0.062"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="check_Links" time="0.038"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="blank_username_password" time="0.231"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="invalidusername_password" time="4.316"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="validUsername_Password" time="1.954"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Verify_Url_DashBoard" time="0.031"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="verifyApplicationTitle_DashBoard" time="0.019"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="heading_Dashboard" time="2.051"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="click_OnUser" time="2.731"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="getTableData" time="7.764"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Click_On_AddUser_Btn" time="2.241"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Fill_Form" time="15.79">
-    <failure message="No alert is present (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.57 seconds
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;DESKTOP-MDH6837&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 19ce80d4-08b6-4697-85e8-81381f485096" type="org.openqa.selenium.NoAlertPresentException">org.openqa.selenium.NoAlertPresentException: No alert is present (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.57 seconds
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;DESKTOP-MDH6837&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 19ce80d4-08b6-4697-85e8-81381f485096
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1049)
-	at TestNgDemo.TestNgMaven.Login_TestCase.Fill_Form(Login_TestCase.java:321)
-</failure>
-  </testcase>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="clickOn_OperatorBtn" time="2.278">
-    <failure message="Unexpected modal dialog (text: User Added Successfully. You can not see added user.) The alert disappeared before it could be closed.: User Added Successfully. You can not see added user.
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;DESKTOP-MDH6837&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 19ce80d4-08b6-4697-85e8-81381f485096
-*** Element info: {Using=xpath, value=//a[@href=&apos;operators.html&apos;]}" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: User Added Successfully. You can not see added user.) The alert disappeared before it could be closed.: User Added Successfully. You can not see added user.
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;DESKTOP-MDH6837&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 19ce80d4-08b6-4697-85e8-81381f485096
-*** Element info: {Using=xpath, value=//a[@href=&apos;operators.html&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at TestNgDemo.TestNgMaven.Login_TestCase.clickOn_OperatorBtn(Login_TestCase.java:329)
-</failure>
-  </testcase>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="logOutBtn" time="2.188">
-    <failure message="Unexpected modal dialog (text: User Added Successfully. You can not see added user.) The alert disappeared before it could be closed.: User Added Successfully. You can not see added user.
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;DESKTOP-MDH6837&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 19ce80d4-08b6-4697-85e8-81381f485096
-*** Element info: {Using=xpath, value=html/body/div[1]/aside[1]/section/ul/li[5]/a/span}" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: User Added Successfully. You can not see added user.) The alert disappeared before it could be closed.: User Added Successfully. You can not see added user.
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;DESKTOP-MDH6837&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 19ce80d4-08b6-4697-85e8-81381f485096
-*** Element info: {Using=xpath, value=html/body/div[1]/aside[1]/section/ul/li[5]/a/span}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at TestNgDemo.TestNgMaven.Login_TestCase.logOutBtn(Login_TestCase.java:349)
-</failure>
-  </testcase>
-  <testcase classname="TestNgDemo.TestNgMaven.AppTest" name="testApp on testApp(TestNgDemo.TestNgMaven.AppTest)" time="4.12"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="check_Button_color" time="0.065"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="check_Links" time="0.05"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="blank_username_password" time="0.251"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="invalidusername_password" time="4.435"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="validUsername_Password" time="0.89"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Verify_Url_DashBoard" time="0.011"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="verifyApplicationTitle_DashBoard" time="0.011"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="heading_Dashboard" time="2.029"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="click_OnUser" time="2.582"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="getTableData" time="7.547"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Click_On_AddUser_Btn" time="2.428"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Fill_Form" time="14.271"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="clickOn_OperatorBtn" time="10.245"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="logOutBtn" time="0.368"/>
+  <testcase classname="TestNgDemo.TestNgMaven.AppTest" name="testApp on testApp(TestNgDemo.TestNgMaven.AppTest)" time="1.311"/>
 </testsuite>

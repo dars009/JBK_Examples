@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="26" started-at="2019-05-12T08:15:04Z" finished-at="2019-05-12T08:15:04Z">
+  <suite name="Command line suite" duration-ms="3" started-at="2019-07-07T05:19:26Z" finished-at="2019-07-07T05:19:26Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="26" started-at="2019-05-12T08:15:04Z" finished-at="2019-05-12T08:15:04Z">
+    <test name="Command line test" duration-ms="3" started-at="2019-07-07T05:19:26Z" finished-at="2019-07-07T05:19:26Z">
       <class name="TestNgDemo.TestNgMaven.AppTest">
-        <test-method status="PASS" signature="testApp()[pri:0, instance:testApp(TestNgDemo.TestNgMaven.AppTest)]" name="testApp" duration-ms="17" started-at="2019-05-12T13:45:04Z" finished-at="2019-05-12T13:45:04Z">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:testApp(TestNgDemo.TestNgMaven.AppTest)]" name="testApp" duration-ms="0" started-at="2019-07-07T10:49:26Z" finished-at="2019-07-07T10:49:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApp -->
