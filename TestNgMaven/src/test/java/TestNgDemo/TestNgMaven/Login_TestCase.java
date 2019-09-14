@@ -22,6 +22,7 @@ public class Login_TestCase{
 
 	@BeforeSuite(groups = "Smoke")
 	public static WebDriver setup_Browser() {
+		System.setProperty("webdriver.gecko.driver", "geckodriver64bit.exe");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		// cookies delete

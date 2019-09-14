@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="21" failures="0" name="TestSuite" time="46.637" errors="0" skipped="0">
+<testsuite tests="21" failures="6" name="TestSuite" time="59.593" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\Workspace\Work\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8898261507489714619.tmp"/>
+    <property name="classworlds.conf" value="D:\Workspace\Work\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1789448635540263822.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_211/bin/server;C:/Program Files/Java/jre1.8.0_211/bin;C:/Program Files/Java/jre1.8.0_211/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Apache\maven\bin;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\darsh\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\darsh\AppData\Local\Programs\Python\Python36\;C:\Users\darsh\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\darsh\AppData\Roaming\npm;C:\jee-photon\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,25 +61,157 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Verify_Url" time="0.021"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="verifyApplicationTitle" time="0.005"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="verify_Title" time="0.068"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="loginsesion" time="0.011"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Check_PlaceHolder_Username" time="0.019"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Check_PlaceHolder_Password" time="0.019"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="check_Button_color" time="0.065"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="check_Links" time="0.05"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="blank_username_password" time="0.251"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="invalidusername_password" time="4.435"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="validUsername_Password" time="0.89"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Verify_Url_DashBoard" time="0.011"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="verifyApplicationTitle_DashBoard" time="0.011"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="heading_Dashboard" time="2.029"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="click_OnUser" time="2.582"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="getTableData" time="7.547"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Click_On_AddUser_Btn" time="2.428"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Fill_Form" time="14.271"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="clickOn_OperatorBtn" time="10.245"/>
-  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="logOutBtn" time="0.368"/>
-  <testcase classname="TestNgDemo.TestNgMaven.AppTest" name="testApp on testApp(TestNgDemo.TestNgMaven.AppTest)" time="1.311"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Verify_Url" time="0.027"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="verifyApplicationTitle" time="0">
+    <failure message="expected [AdminLTE 2 | Log in] but found [JavaByKiran | Log in]" type="java.lang.AssertionError">java.lang.AssertionError: expected [AdminLTE 2 | Log in] but found [JavaByKiran | Log in]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at TestNgDemo.TestNgMaven.Login_TestCase.verifyApplicationTitle(Login_TestCase.java:59)
+</failure>
+    <system-out>page title is JavaByKiran | Log in
+..................
+</system-out>
+  </testcase>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="verify_Title" time="5.097">
+    <failure message="Unable to locate element: //a[@href=&apos;index2.html&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-MDH6837&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190815163925, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16196, moz:profile: C:\Users\darsh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49682bb2-aaf2-45c4-be2e-ebc69e5d3cc9
+*** Element info: {Using=xpath, value=//a[@href=&apos;index2.html&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@href=&apos;index2.html&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-MDH6837&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190815163925, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16196, moz:profile: C:\Users\darsh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49682bb2-aaf2-45c4-be2e-ebc69e5d3cc9
+*** Element info: {Using=xpath, value=//a[@href=&apos;index2.html&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at TestNgDemo.TestNgMaven.Login_TestCase.verify_Title(Login_TestCase.java:68)
+</failure>
+  </testcase>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="loginsesion" time="0.027"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Check_PlaceHolder_Username" time="0.089"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Check_PlaceHolder_Password" time="0.054"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="check_Button_color" time="0.183"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="check_Links" time="0.132"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="blank_username_password" time="0.432"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="invalidusername_password" time="4.631"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="validUsername_Password" time="1.321"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Verify_Url_DashBoard" time="0.013"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="verifyApplicationTitle_DashBoard" time="0.003">
+    <failure message="expected [AdminLTE 2 | Dashboard] but found [JavaByKiran | Dashboard]" type="java.lang.AssertionError">java.lang.AssertionError: expected [AdminLTE 2 | Dashboard] but found [JavaByKiran | Dashboard]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at TestNgDemo.TestNgMaven.Login_TestCase.verifyApplicationTitle_DashBoard(Login_TestCase.java:222)
+</failure>
+    <system-out>page title is JavaByKiran | Dashboard
+..................
+</system-out>
+  </testcase>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="heading_Dashboard" time="0.043">
+    <failure message="expected [Dashboard Control panel] but found [Dashboard Courses Offered]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Dashboard Control panel] but found [Dashboard Courses Offered]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at TestNgDemo.TestNgMaven.Login_TestCase.heading_Dashboard(Login_TestCase.java:232)
+</failure>
+  </testcase>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="click_OnUser" time="2.441"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="getTableData" time="7.477"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Click_On_AddUser_Btn" time="2.271"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="Fill_Form" time="13.575">
+    <failure message="Unable to locate element: html/body/div[1]/div[1]/section[2]/div/div/div/form/div[1]/div[5]/div/select
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-MDH6837&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190815163925, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16196, moz:profile: C:\Users\darsh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49682bb2-aaf2-45c4-be2e-ebc69e5d3cc9
+*** Element info: {Using=xpath, value=html/body/div[1]/div[1]/section[2]/div/div/div/form/div[1]/div[5]/div/select}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: html/body/div[1]/div[1]/section[2]/div/div/div/form/div[1]/div[5]/div/select
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-MDH6837&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190815163925, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16196, moz:profile: C:\Users\darsh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49682bb2-aaf2-45c4-be2e-ebc69e5d3cc9
+*** Element info: {Using=xpath, value=html/body/div[1]/div[1]/section[2]/div/div/div/form/div[1]/div[5]/div/select}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at TestNgDemo.TestNgMaven.Login_TestCase.Fill_Form(Login_TestCase.java:310)
+</failure>
+  </testcase>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="clickOn_OperatorBtn" time="9.92"/>
+  <testcase classname="TestNgDemo.TestNgMaven.Login_TestCase" name="logOutBtn" time="5.16">
+    <failure message="Unable to locate element: //p[contains(text(),&apos;Logout successfully&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-MDH6837&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190815163925, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16196, moz:profile: C:\Users\darsh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49682bb2-aaf2-45c4-be2e-ebc69e5d3cc9
+*** Element info: {Using=xpath, value=//p[contains(text(),&apos;Logout successfully&apos;)]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[contains(text(),&apos;Logout successfully&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-MDH6837&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190815163925, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16196, moz:profile: C:\Users\darsh\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49682bb2-aaf2-45c4-be2e-ebc69e5d3cc9
+*** Element info: {Using=xpath, value=//p[contains(text(),&apos;Logout successfully&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at TestNgDemo.TestNgMaven.Login_TestCase.logOutBtn(Login_TestCase.java:352)
+</failure>
+    <system-err>JavaScript error: https://code.jquery.com/ui/1.11.4/jquery-ui.min.js, line 6: ReferenceError: jQuery is not defined
+JavaScript error: file:///D:/AdminLTE/pages/examples/links.html, line 337: ReferenceError: $ is not defined
+</system-err>
+  </testcase>
+  <testcase classname="TestNgDemo.TestNgMaven.AppTest" name="testApp on testApp(TestNgDemo.TestNgMaven.AppTest)" time="6.697"/>
 </testsuite>
