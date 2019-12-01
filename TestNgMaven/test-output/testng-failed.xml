@@ -5,9 +5,14 @@
     <classes>
       <class name="TestNgDemo.TestNgMaven.Login_TestCase">
         <methods>
+          <include name="verify_Title"/>
+          <include name="Fill_Form"/>
           <include name="logOutBtn"/>
           <include name="close_Browse"/>
+          <include name="endReport"/>
           <include name="setup_Browser"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- TestNgDemo.TestNgMaven.Login_TestCase -->
     </classes>
