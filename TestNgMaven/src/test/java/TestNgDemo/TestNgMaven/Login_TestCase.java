@@ -22,6 +22,8 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
@@ -61,35 +63,7 @@ public class Login_TestCase {
 		extent.setSystemInfo("Java", "8.0");
 	}
 
-	@AfterMethod
-	public void getResult(ITestResult result) {
-		if (result.getStatus() == ITestResult.FAILURE) {
-			System.out.println("Test Case Failed is " + result.getName());
-			System.out.println("Test Case Failed is " + result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			System.out.println("Test Case Skipped is " + result.getName());
-		}
-		// ending test
-		// endTest(logger) : It ends the current test and prepares to create HTML report
-
-	}
-
-	@AfterTest
-	public void endReport() {
-		// writing everything to document
-		// flush() - to write or update test information to your report.
-		extent.flush();
-		// Call close() at the very end of your session to clear all resources.
-		// If any of your test ended abruptly causing any side-affects (not all logs
-		// sent to ExtentReports, information missing), this method will ensure that the
-		// test is still appended to the report with a warning message.
-		// You should call close() only once, at the very end (in @AfterSuite for
-		// example) as it closes the underlying stream.
-		// Once this method is called, calling any Extent method will throw an error.
-		// close() - To close all the operation
-		extent.close();
-	}
-
+	
 	@Test(priority = 1, groups = "Regression")
 	public void Verify_Url() {
 		test = extent.createTest("TC-1 : Verify_Url ");
@@ -427,7 +401,28 @@ public class Login_TestCase {
 		driver.findElement(By.xpath("html/body/div[1]/aside[1]/section/ul/li[5]/a/span")).click();
 		System.out.println(driver.findElement(By.xpath("//p[contains(text(),'Logout successfully')]")).getText());
 	}
-
+	
+	 @AfterMethod
+	    public void getResult(ITestResult result) {
+	        if(result.getStatus() == ITestResult.FAILURE) {
+	            test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" FAILED ", ExtentColor.RED));
+	            test.fail(result.getThrowable());
+	        }
+	        else if(result.getStatus() == ITestResult.SUCCESS) {
+	            test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" PASSED ", ExtentColor.GREEN));
+	        }
+	        else {
+	            test.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" SKIPPED ", ExtentColor.ORANGE));
+	            test.skip(result.getThrowable());
+	        }
+	    }
+	     
+	    @AfterTest
+	    public void tearDown() {
+	    	//to write or update test information to reporter
+	        extent.flush();
+	    }
+	
 	@AfterSuite(groups = "Smoke")
 	public void close_Browse() {
 		driver.quit();

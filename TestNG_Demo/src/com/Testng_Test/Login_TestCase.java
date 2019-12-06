@@ -9,6 +9,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -19,13 +20,14 @@ import org.testng.annotations.Test;
 
 public class Login_TestCase{
 	public static WebDriver driver;
-
+	
 	@BeforeSuite(groups = "Smoke")
 	public static WebDriver setup_Browser() {
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.get("file:///D:/AdminLTE/index.html");
+		driver.get("file:///D:/Selenium/Selenium%20Software/Offline%20Website/index.html");
 		return driver;
 	}
 
@@ -36,7 +38,7 @@ public class Login_TestCase{
 		System.out.println("page title is " + my_url);
 
 		// expected url
-		String expected_url = "file:///D:/AdminLTE/index.html";
+		String expected_url = "file:///D:/Selenium/Selenium%20Software/Offline%20Website/index.html";
 		Assert.assertEquals(my_url, expected_url);
 		
 		System.out.println("**************************");

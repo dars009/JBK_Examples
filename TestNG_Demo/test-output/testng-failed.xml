@@ -6,10 +6,14 @@
       <class name="com.Testng_Test.Login_TestCase">
         <methods>
           <include name="Verify_Url_DashBoard"/>
+          <include name="verify_Title"/>
           <include name="logOutBtn"/>
           <include name="close_Browse"/>
-          <include name="clickOn_OperatorBtn"/>
+          <include name="verifyApplicationTitle_DashBoard"/>
+          <include name="heading_Dashboard"/>
+          <include name="verifyApplicationTitle"/>
           <include name="setup_Browser"/>
+          <include name="Fill_Form"/>
         </methods>
       </class> <!-- com.Testng_Test.Login_TestCase -->
     </classes>

@@ -9,8 +9,8 @@
           <include name="Fill_Form"/>
           <include name="logOutBtn"/>
           <include name="close_Browse"/>
-          <include name="endReport"/>
           <include name="setup_Browser"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
           <include name="getResult"/>
         </methods>
