@@ -36,18 +36,6 @@ public class Login_TestCase {
 	ExtentTest test;
 	String fileName = System.getProperty("user.dir") + "/test-output/HtmlTestResults.html";
 
-	@BeforeSuite(groups = "Smoke")
-	public static WebDriver setup_Browser() {
-		System.setProperty("webdriver.chrome.driver", "chromedriver78.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		// cookies delete
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.get("file:///D:/AdminLTE/index.html");
-		return driver;
-
-	}
-
 	@BeforeTest
 	public void setUp() {
 		System.out.println("Extend Method Method Run");
@@ -63,7 +51,18 @@ public class Login_TestCase {
 		extent.setSystemInfo("Java", "8.0");
 	}
 
-	
+	@BeforeSuite(groups = "Smoke")
+	public static WebDriver setup_Browser() {
+		System.setProperty("webdriver.chrome.driver", "chromedriver78.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		// cookies delete
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.get("file:///D:/AdminLTE/index.html");
+		return driver;
+
+	}
+
 	@Test(priority = 1, groups = "Regression")
 	public void Verify_Url() {
 		test = extent.createTest("TC-1 : Verify_Url ");
@@ -110,7 +109,7 @@ public class Login_TestCase {
 	public void loginsesion() {
 		test = extent.createTest("TC-4 : loginsesion ");
 		test.log(Status.INFO, "Execution Start : loginsesion ");
-		
+
 		driver.findElement(By.xpath("//p[contains(text(),'Sign in to start your session')]"));
 		System.out.println("Sign in to start your session");
 		System.out.println("***********************");
@@ -168,7 +167,7 @@ public class Login_TestCase {
 	public void blank_username_password() {
 		test = extent.createTest("TC-9 : blank_username_password ");
 		test.log(Status.INFO, "Execution Start : blank_username_password ");
-		
+
 		WebElement stract = driver.findElement(By.xpath("//input[@id='email']"));
 		stract.sendKeys("");
 		String strexp = "sa";
@@ -190,7 +189,7 @@ public class Login_TestCase {
 	public void invalidusername_password() throws InterruptedException {
 		test = extent.createTest("TC-10 : invalidusername_password ");
 		test.log(Status.INFO, "Execution Start : invalidusername_password ");
-		
+
 		WebElement stract = driver.findElement(By.xpath("html/body/div[1]/div[2]/form/div[1]/input"));
 		stract.sendKeys("kiran12@gmail.com");
 		String strexp = "kiran@gmail.com";
@@ -214,7 +213,7 @@ public class Login_TestCase {
 	public void validUsername_Password() throws InterruptedException {
 		test = extent.createTest("TC-11 : validUsername_Password ");
 		test.log(Status.INFO, "Execution Start : validUsername_Password ");
-		
+
 		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("kiran@gmail.com");
 		;
 
@@ -230,7 +229,7 @@ public class Login_TestCase {
 	public void Verify_Url_DashBoard() {
 		test = extent.createTest("TC-12 : Verify_Url_DashBoard ");
 		test.log(Status.INFO, "Execution Start : Verify_Url_DashBoard ");
-		
+
 		// Actual url
 		String my_url = driver.getCurrentUrl();
 		System.out.println("page title is " + my_url);
@@ -246,7 +245,7 @@ public class Login_TestCase {
 	public void verifyApplicationTitle_DashBoard() {
 		test = extent.createTest("TC-13 : verifyApplicationTitle_DashBoard ");
 		test.log(Status.INFO, "Execution Start : verifyApplicationTitle_DashBoard ");
-		
+
 		// Actual title
 		String my_title = driver.getTitle();
 		System.out.println("page title is " + my_title);
@@ -263,7 +262,7 @@ public class Login_TestCase {
 	public void heading_Dashboard() throws InterruptedException {
 		test = extent.createTest("TC-14 : heading_Dashboard ");
 		test.log(Status.INFO, "Execution Start : heading_Dashboard ");
-		
+
 		String stitle = driver.findElement(By.xpath("//h1[contains(text(),'Dashboard')]")).getText();
 		String exp = "Dashboard Courses Offered";
 		Assert.assertEquals(stitle, exp);
@@ -276,7 +275,7 @@ public class Login_TestCase {
 	public void click_OnUser() throws InterruptedException {
 		test = extent.createTest("TC-15 : click_OnUser ");
 		test.log(Status.INFO, "Execution Start : click_OnUser ");
-		
+
 		driver.findElement(By.xpath("//a[@href='users.html']")).click();
 		Thread.sleep(2000);
 
@@ -305,17 +304,17 @@ public class Login_TestCase {
 
 	@Test(priority = 16, groups = "Unit")
 	public void getTableData() throws InterruptedException {
-		
+
 		test = extent.createTest("TC-16 : getTableData ");
 		test.log(Status.INFO, "Execution Start : getTableData ");
-		
+
 		WebElement Table = driver.findElement(By.xpath("//table[@class='table table-hover']"));
 		List<WebElement> tr = Table.findElements(By.tagName("tr"));
 		System.out.println("total no of rows " + tr.size());
 		for (WebElement row : tr) {
 			List<WebElement> td = row.findElements(By.tagName("td"));
 			for (WebElement col : td) {
-				System.out.print(col.getText()+"  ");
+				System.out.print(col.getText() + "  ");
 			}
 			System.out.println("----------------------------");
 		}
@@ -324,20 +323,20 @@ public class Login_TestCase {
 
 	@Test(priority = 17, groups = "Unit")
 	public void Click_On_AddUser_Btn() throws InterruptedException {
-		
+
 		test = extent.createTest("TC-17 : Click_On_AddUser_Btn ");
 		test.log(Status.INFO, "Execution Start : Click_On_AddUser_Btn ");
-		
+
 		driver.findElement(By.xpath("//button[@class='btn btn-block btn-primary btn-sm pull-right']")).click();
 		Thread.sleep(2000);
 	}
 
 	@Test(priority = 18, groups = "Unit")
 	public void Fill_Form() throws InterruptedException {
-		
+
 		test = extent.createTest("TC-18 : Fill_Form ");
 		test.log(Status.INFO, "Execution Start : Fill_Form ");
-		
+
 		WebElement uname = driver.findElement(By.xpath("//input[@id='username']"));
 		uname.sendKeys("darshit");
 		Thread.sleep(2000);
@@ -372,10 +371,10 @@ public class Login_TestCase {
 
 	@Test(priority = 19, groups = "Unit")
 	public void clickOn_OperatorBtn() throws InterruptedException {
-		
+
 		test = extent.createTest("TC-19 : clickOn_OperatorBtn ");
 		test.log(Status.INFO, "Execution Start : clickOn_OperatorBtn ");
-		
+
 		driver.findElement(By.xpath("//a[@href='operators.html']")).click();
 		Thread.sleep(2000);
 		// Get Operator table Data
@@ -397,32 +396,30 @@ public class Login_TestCase {
 	public void logOutBtn() {
 		test = extent.createTest("TC-20 : logOutBtn ");
 		test.log(Status.INFO, "Execution Start : logOutBtn ");
-		
+
 		driver.findElement(By.xpath("html/body/div[1]/aside[1]/section/ul/li[5]/a/span")).click();
 		System.out.println(driver.findElement(By.xpath("//p[contains(text(),'Logout successfully')]")).getText());
 	}
-	
-	 @AfterMethod
-	    public void getResult(ITestResult result) {
-	        if(result.getStatus() == ITestResult.FAILURE) {
-	            test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" FAILED ", ExtentColor.RED));
-	            test.fail(result.getThrowable());
-	        }
-	        else if(result.getStatus() == ITestResult.SUCCESS) {
-	            test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" PASSED ", ExtentColor.GREEN));
-	        }
-	        else {
-	            test.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" SKIPPED ", ExtentColor.ORANGE));
-	            test.skip(result.getThrowable());
-	        }
-	    }
-	     
-	    @AfterTest
-	    public void tearDown() {
-	    	//to write or update test information to reporter
-	        extent.flush();
-	    }
-	
+
+	@AfterMethod
+	public void getResult(ITestResult result) {
+		if (result.getStatus() == ITestResult.FAILURE) {
+			test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " FAILED ", ExtentColor.RED));
+			test.fail(result.getThrowable());
+		} else if (result.getStatus() == ITestResult.SUCCESS) {
+			test.log(Status.PASS, MarkupHelper.createLabel(result.getName() + " PASSED ", ExtentColor.GREEN));
+		} else {
+			test.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " SKIPPED ", ExtentColor.ORANGE));
+			test.skip(result.getThrowable());
+		}
+	}
+
+	@AfterTest
+	public void tearDown() {
+		// to write or update test information to reporter
+		extent.flush();
+	}
+
 	@AfterSuite(groups = "Smoke")
 	public void close_Browse() {
 		driver.quit();
